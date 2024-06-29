@@ -9,10 +9,10 @@ void troca(int *a, int *b) {
 }
 
 int separa(int v[], int baixo, int alto, int *loop) {
-    int x = v[alto];  // o pivô
-    int i = baixo - 1; // índice mais alto para o lado baixo
+    int x = v[alto];
+    int i = baixo - 1; // índice mais alto para o lado + baixo
 
-    // Processa cada elemento
+    // processa cada elemento
     for (int j = baixo; j <= alto - 1; j++) {
         (*loop)++;
         // cada elemento um loop ++
@@ -60,6 +60,7 @@ int main(){
     double mediaseg = (double)(depois - antes)/ CLOCKS_PER_SEC;
     double mediasegg = mediaseg*1000;
 
+    //se for fazer testes só desfazer esse comentario para ver os números que estão sendo lidos pelo código
     /*
     for(size_t i = 0; i <= 100;i++){
         printf("%i\n", v[i]);
